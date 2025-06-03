@@ -1,0 +1,19 @@
+- id: "pre_ccat24"
+  date: "2024-07-01"
+  title: "Talk: CCAT Collaboration Meeting 5"
+  description: "Status Update: primecam\_readout."
+
+- id: "pre_spie24"
+  date: "2024-06-01"
+  title: "Poster: SPIE Astronomical Telescopes + Instrumentation"
+  description: "CCAT: FYST prime-cam readout software: a framework for massively scalable KID arrays. Proc. SPIE. 13101, Software and Cyberinfrastructure for Astronomy VIII"
+
+- id: "pre_phas23"
+  date: "2023-04-01"
+  title: "Talk: UBC PHAS Invited."
+  description: "Unveiling the transient evolution of a galaxy through a hyper-luminous quasar, Q2343+125 at $z=2.577$"
+
+- id: "pre_ccat23"
+  date: "2023-06-01"
+  title: "Talk: CCAT Collaboration Meeting 4"
+  description: "The development and status of the PrimeCam readout software."

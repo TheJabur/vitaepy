@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% set who = funcs.entryWithID(data.personal, 'per_james1') -%}
+{% set full_name = funcs.fullName(who['name_first'], who['name_last'], who['name_middle']) -%}
+
+
+{# ========================================================================== #
+# head 
+#}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ full_name }} - Curriculum Vitae</title>
+    <style>
+        {%- filter indent(width=8) %}
+            {% include 'style_v1.css' %}
+        {%- endfilter %}
+    </style>
+</head>
+<body>
+
+
+{# ========================================================================== #
+# personal 
+#}
+<section id="personal">
+    {# <article class="entry"> #}
+
+        <img id="portrait" src="portrait.png" height="150">
+
+        <h1>{{ full_name }}</h1>
+
+        <div id="personal-aff">
+            <p id="">{{ who['aff_dept'] }}</p>
+            <p id="">{{ who['aff_univ'] }}</p>
+            <p id="">{{ who['aff_addr'] }}</p>
+        </div>
+
+        <div id="personal-con">
+            <p id="">ORCID: <a href="https://orcid.org/{{ who['orcid'] }}">{{ who['orcid'] }}</a></p>
+            <p id="">Email: <a href="mailto:{{ who['email'] }}">{{ who['email'] }}</a></p>
+            <p id="">Cell: {{ who['cell'] }}</p>
+        </div>
+
+        <div id="personal-desc">
+            <p>{{ who['description'] }}</p>
+        </div>
+
+        {# <div id="personal-skills">
+        {% for s in who['skills'] %}
+            <div class="per-skill-entry">
+                <p class="per-skill-title">{{ s['title'] }}</div>
+                <p class="per-skill-desc">{{ s['description'] }}</p>
+            </div>
+        {% endfor %}
+        </div> #}
+
+    {# </article> #}
+</section>
+
+
+{# ========================================================================== #
+# education 
+#}
+<section id="education">
+    <h2>Education</h2>
+
+    {% for e in data.education %}
+    <article class="entry">
+
+        <div class="years-float">{{ funcs.years(e['date_start'], e['date_graduation']) }}</div>
+        <div class="details-floated">
+            <h3>{{ e['title_longform'] }} in {{ e['program'] }}</h3>
+            <p id="institution">{{ e['institution'] }}</p>
+            <p id="notes">{{ e['notes'] }}</p>
+        </div>
+
+    </article>
+    {% endfor %}
+
+</section>
+
+
+{# ========================================================================== #
+# research experience 
+#}
+<section id="experience_research">
+    <h2>Academic Research Experience</h2>
+
+    {% for e in data.research %}
+    <article class="entry">
+
+        <div class="years-float">{{ funcs.years(e['date_start'], e['date_end']) }}</div>
+        <div class="details-floated">
+            <h3>{{ e['position'] }}, {{ e['institution'] }}</h3>
+            {% for r in e['responsibilities'] %}
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">{{ r['title'] }}</p>
+                    <p class="exp-res-desc">{{ r['description'] }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+    </article>
+    {% endfor %}
+
+</section>
+
+
+{# ========================================================================== #
+# work experience 
+#}
+<section id="experience_work">
+    <h2>Previous Work Experience</h2>
+
+    {% for e in data.experience %}
+    <article class="entry">
+
+        <div class="years-float">{{ funcs.years(e['date_start'], e['date_end']) }}</div>
+        <div class="details-floated">
+            <h3>{{ e['title'] }}, {{ e['company'] }}</h3>
+            {% for r in e['responsibilities'] %}
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">{{ r['title'] }}</p>
+                    <p class="exp-res-desc">{{ r['description'] }}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+    </article>
+    {% endfor %}
+
+</section>
+
+
+{# ========================================================================== #
+# presentations 
+#}
+<section id="presentations">
+    <h2>Talks & Presentations</h2>
+
+    {% for e in data.presentations %}
+    <article class="entry">
+
+        <div class="years-float">{{ funcs.year(e['date']) }}</div>
+        <div class="details-floated">
+            <h3>{{ e['title'] }}</h3>
+            <p>{{ e['description'] }}</p>
+        </div>
+
+    </article>
+    {% endfor %}
+
+</section>
+
+
+{# ========================================================================== #
+# teaching 
+#}
+<section id="teaching">
+    <h2>Teaching Experience</h2>
+
+    {% for e in data.teaching %}
+    <article class="entry">
+
+        <div class="years-float">{{ funcs.years(e['date_start'], e['date_end']) }}</div>
+        <div class="details-floated">
+            <h3>{{ e['title'] }}</h3>
+            <p>{{ e['description'] }}</p>
+        </div>
+
+    </article>
+    {% endfor %}
+
+</section>
+
+
+{# ========================================================================== #
+# awards 
+#}
+<section id="awards">
+    <h2>Awards, Recognitions, and Honours</h2>
+
+    {% for e in data.awards %}
+    <article class="entry">
+
+        <div class="years-float">{{ funcs.year(e['date']) }}</div>
+        <div class="details-floated">
+            <h3>{{ e['title'] }}</h3>
+            <p>{{ e['description'] }}</p>
+        </div>
+
+    </article>
+    {% endfor %}
+
+</section>
+
+
+{# ========================================================================== #
+# publications 
+#}
+<section id="publications">
+    <h2>Publications</h2>
+
+    {% for e in data.publications %}
+    <article class="entry">
+
+        {% set first_auth = '*' if e.get('mine', False) else '' %}
+
+        <div class="years-float">{{ funcs.year(e['date']) }}{{ first_auth }}</div>
+        <div class="details-floated">
+            <h3>{{ e['title'] }}</h3>
+            <p class="pub-journal">{{ e['journal'] }}</p>
+            <p>{{ e['authors'] }}</p>
+        </div>
+
+    </article>
+    {% endfor %}
+
+</section>
+
+
+{# ========================================================================== #
+# footer 
+#}
+<footer>
+    <p>Version: {{ funcs.version() }}</p>
+</footer>
+
+
+</body>
+</html>

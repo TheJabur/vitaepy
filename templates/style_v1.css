@@ -1,0 +1,177 @@
+/* # ========================================================================== #
+# GENERAL
+*/
+
+.exp-res-entry::after, 
+p.exp-res-title::after, 
+#personal::after, 
+p.exp-res-desc::after,
+#personal-desc::before,
+p.per-skill-desc::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: sans-serif;
+    max-width: 900px; /* approx letter */
+    margin: 0 auto; /* center */
+}
+
+footer {
+    color: grey;
+}
+
+section {
+    border: 1px solid #a2a6cc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: Times;
+}
+
+h1 {
+    font-family: Garamond;
+    font-size: 25pt;
+    font-weight: normal;
+    border-bottom: 2px solid #2d3250;
+}
+
+
+/* # ========================================================================== #
+# personal
+*/
+
+section#personal {
+    margin-bottom: 0px;
+    border: 0px;
+}
+
+#personal-aff { /* affiliation */
+    float: left;
+    width: 45%;
+}
+
+#personal-con { /* contact */
+    float: right;
+    text-align: right;
+}
+
+#personal-aff p,
+#personal-con p {
+    margin: 5px 0;
+    font-size: 13pt;
+}
+
+/* portrait */
+img#portrait {
+    float: right; 
+    margin-left: 20px;
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+/* portrait; circle/border */
+/* #portrait {
+    float: right; 
+    background-color: white; 
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #000000;
+    outline: 10px solid white;
+    margin: 20px 0 0 20px;
+} */
+
+#personal-desc { /* about me */
+    font-family: Helvetica;
+    font-style: italic;
+    color: #555863;
+}
+
+#personal-skills {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.per-skill-entry {
+    margin-left: 20px;
+    /* border: 1px solid #2d3250; */
+}
+
+p.per-skill-title {
+    float: left;
+    width: 200px;
+    /* font-weight: bold; */
+    font-style: italic;
+    margin-top: 0px;
+    /* border: 1px solid #2d3250; */
+}
+
+p.per-skill-desc {
+    margin-left: 205px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* padding-bottom: 5px; */
+    /* border: 1px solid #2d3250; */
+}
+
+
+/* # ========================================================================== #
+# entries
+*/
+
+.years-float {
+    float: left; 
+    width: 100px; 
+    font-weight: bold;
+    margin-top: 2px;
+    margin-right: 5px; 
+    margin-left: 10px;
+    color: #555;
+}
+
+.details-floated {
+    margin-left: 115px;
+    padding-bottom: 0px;
+}
+
+.entry p {
+    margin: 5px 0;
+}
+
+.entry h3 {
+    margin-bottom: 5px;
+}
+
+
+/* # ========================================================================== #
+# OVERRIDES
+*/
+
+p.exp-res-title {
+    float: left;
+    width: 200px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+
+p.exp-res-desc {
+    margin-left: 205px;
+    margin-top: 0px;
+}
+
+p.pub-journal {
+    font-style: italic;
+}

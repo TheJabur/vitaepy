@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James R. Burgoyne - Curriculum Vitae</title>
+    <style>
+                    /* # ========================================================================== #
+        # GENERAL
+        */
+
+        .exp-res-entry::after, 
+        p.exp-res-title::after, 
+        #personal::after, 
+        p.exp-res-desc::after,
+        #personal-desc::before,
+        p.per-skill-desc::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        body {
+            font-family: sans-serif;
+            max-width: 900px; /* approx letter */
+            margin: 0 auto; /* center */
+        }
+
+        footer {
+            color: grey;
+        }
+
+        section {
+            border: 1px solid #a2a6cc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        h2, h3, h4, h5, h6 {
+            font-family: Times;
+        }
+
+        h1 {
+            font-family: Garamond;
+            font-size: 25pt;
+            font-weight: normal;
+            border-bottom: 2px solid #2d3250;
+        }
+
+
+        /* # ========================================================================== #
+        # personal
+        */
+
+        section#personal {
+            margin-bottom: 0px;
+            border: 0px;
+        }
+
+        #personal-aff { /* affiliation */
+            float: left;
+            width: 45%;
+        }
+
+        #personal-con { /* contact */
+            float: right;
+            text-align: right;
+        }
+
+        #personal-aff p,
+        #personal-con p {
+            margin: 5px 0;
+            font-size: 13pt;
+        }
+
+        /* portrait */
+        img#portrait {
+            float: right; 
+            margin-left: 20px;
+            background-color: white;
+            padding-left: 10px;
+            padding-top: 20px;
+        }
+
+        /* portrait; circle/border */
+        /* #portrait {
+            float: right; 
+            background-color: white; 
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #000000;
+            outline: 10px solid white;
+            margin: 20px 0 0 20px;
+        } */
+
+        #personal-desc { /* about me */
+            font-family: Helvetica;
+            font-style: italic;
+            color: #555863;
+        }
+
+        #personal-skills {
+            padding-top: 10px;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+        }
+
+        .per-skill-entry {
+            margin-left: 20px;
+            /* border: 1px solid #2d3250; */
+        }
+
+        p.per-skill-title {
+            float: left;
+            width: 200px;
+            /* font-weight: bold; */
+            font-style: italic;
+            margin-top: 0px;
+            /* border: 1px solid #2d3250; */
+        }
+
+        p.per-skill-desc {
+            margin-left: 205px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            /* padding-bottom: 5px; */
+            /* border: 1px solid #2d3250; */
+        }
+
+
+        /* # ========================================================================== #
+        # entries
+        */
+
+        .years-float {
+            float: left; 
+            width: 100px; 
+            font-weight: bold;
+            margin-top: 2px;
+            margin-right: 5px; 
+            margin-left: 10px;
+            color: #555;
+        }
+
+        .details-floated {
+            margin-left: 115px;
+            padding-bottom: 0px;
+        }
+
+        .entry p {
+            margin: 5px 0;
+        }
+
+        .entry h3 {
+            margin-bottom: 5px;
+        }
+
+
+        /* # ========================================================================== #
+        # OVERRIDES
+        */
+
+        p.exp-res-title {
+            float: left;
+            width: 200px;
+            font-weight: bold;
+            margin-top: 0px;
+        }
+
+        p.exp-res-desc {
+            margin-left: 205px;
+            margin-top: 0px;
+        }
+
+        p.pub-journal {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<section id="personal">
+    
+
+        <img id="portrait" src="portrait.png" height="150">
+
+        <h1>James R. Burgoyne</h1>
+
+        <div id="personal-aff">
+            <p id="">Department of Physics and Astronomy</p>
+            <p id="">University of British Columbia</p>
+            <p id="">Victoria, BC, Canada</p>
+        </div>
+
+        <div id="personal-con">
+            <p id="">ORCID: <a href="https://orcid.org/0000-0001-8706-1268">0000-0001-8706-1268</a></p>
+            <p id="">Email: <a href="mailto:jburgoyne@phas.ubc.ca">jburgoyne@phas.ubc.ca</a></p>
+            <p id="">Cell: (250) 986 6313</p>
+        </div>
+
+        <div id="personal-desc">
+            <p>Software engineer and astrophysicist adept at designing, developing, and optimizing solutions for astronomical and cryostat instrumentation and data pipelines, proficient in Python, RFSoC, and Linux environments.</p>
+        </div>
+
+        
+
+    
+</section>
+
+
+
+<section id="education">
+    <h2>Education</h2>
+
+    
+    <article class="entry">
+
+        <div class="years-float">2021 - 2023</div>
+        <div class="details-floated">
+            <h3>Master of Science in Astronomy</h3>
+            <p id="institution">University of British Columbia</p>
+            <p id="notes">Thesis focused on early Universe galaxy evolution through the observations and analysis of a hyper-luminous quasar at redshift 2. Graduate classes included galactic astronomy, quantum mechanics, observational astronomy, and theory of measurement.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2018 - 2021</div>
+        <div class="details-floated">
+            <h3>Bachelor of Science in Combined Physics and Astronomy</h3>
+            <p id="institution">University of Victoria</p>
+            <p id="notes">Notable courses include radiative transfer, cosmology, observational astronomy, stellar, galaxy, and planetary astrophysics, mathematical physics, computational physics, and complex analysis.</p>
+        </div>
+
+    </article>
+    
+
+</section>
+
+
+
+<section id="experience_research">
+    <h2>Academic Research Experience</h2>
+
+    
+    <article class="entry">
+
+        <div class="years-float">2023 - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="details-floated">
+            <h3>Researcher, University of British Columbia</h3>
+            
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">CCAT Readout Development</p>
+                    <p class="exp-res-desc">Led software and system development for the Prime-Cam instrument MKID readouts on the Fred Young Submillimeter Telescope (FYST/CCAT), a 6-meter, facility-class observatory. The role required a holistic approach to system design, integrating Linux-based control systems with parallel Xilinx ZCU111 RFSoC boards managing multiple detector arrays. Development was primarily in Python and included technologies such as Redis for messaging and data storage, all within a complex Dockerized control environment that interfaces with telescope and instrument software.</p>
+                </div>
+            
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">CCAT Quick-Look Map Maker Development</p>
+                    <p class="exp-res-desc">Conducted performance-optimized development of a quick-look map-making tool for the PrimeCam data pipeline. Work involved detailed analysis of BLAST-TNG MKID data to characterize detector noise and required deep expertise in astronomical map-making methodologies and optimization techniques.</p>
+                </div>
+            
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2021 - 2023</div>
+        <div class="details-floated">
+            <h3>Research Assistant, University of British Columbia</h3>
+            
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">CCAT Readout System Development Support</p>
+                    <p class="exp-res-desc">Contributed to the development, testing, and analysis of the CCAT readout system through lab work and software support.</p>
+                </div>
+            
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">Lyman Break Galaxy (LBG) Survey</p>
+                    <p class="exp-res-desc">Reduced and analyzed Hubble Space Telescope (HST) data to perform a Lyman Break Galaxy density survey around SPT0311-58, contributing to high-redshift galaxy population studies.</p>
+                </div>
+            
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2020 - 2020</div>
+        <div class="details-floated">
+            <h3>Term Research Assistant, Herzberg Astronomy and Astrophysics Research Centre</h3>
+            
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">Submillimeter Galaxy Analysis</p>
+                    <p class="exp-res-desc">Applied a custom-built Python toolkit for spectral data cube reduction and analysis to generate research-driven visualizations. Supported multiple projects using data from observatories including IRAM-NOEMA and ALMA.</p>
+                </div>
+            
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2019 - 2019</div>
+        <div class="details-floated">
+            <h3>Term Research Assistant, Herzberg Astronomy and Astrophysics Research Centre</h3>
+            
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">GIRMOS Testbed Optical Integration</p>
+                    <p class="exp-res-desc">Developed control software interfaces between the testbed optical table controller computer and various optical elements including the wavefront-sensors and deformable mirrors for the GIRMOS instrument being designed for the Gemini Telescopes, and pathfinder for future Thirty Meter Telescope (TMT) multi-object spectroscopic instrumentation.</p>
+                </div>
+            
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">Quasar Q2343+125 Data Analysis</p>
+                    <p class="exp-res-desc">Performed reduction and analysis of numerous spectral-cubes of quasar Q2343+125 from various observatories including IRAM-NOEMA, SCUBA2, and ALMA. This included the design and writing of a custom python class and associated functions to perform the data cube reduction, line/source searches, spectral extractions and fitting, and figure production.</p>
+                </div>
+            
+        </div>
+
+    </article>
+    
+
+</section>
+
+
+
+<section id="experience_work">
+    <h2>Previous Work Experience</h2>
+
+    
+    <article class="entry">
+
+        <div class="years-float">2011 - 2017</div>
+        <div class="details-floated">
+            <h3>Independent Developer, Abur Mobile</h3>
+            
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">Mobile Application Development</p>
+                    <p class="exp-res-desc">Developed and deployed iOS applications from conception to release, leveraging Swift and Objective-C for robust software development. Proficient in UI/UX design and implementation with Adobe Photoshop, and skilled in full-stack integration for mobile environments.</p>
+                </div>
+            
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2005 - 2012</div>
+        <div class="details-floated">
+            <h3>Co-Founder, AIO Computers</h3>
+            
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">Full-Stack Web Development</p>
+                    <p class="exp-res-desc">Developed and managed front-end and back-end web platforms and databases. Proficient in HTML, XML, PHP, JavaScript, and SQL.</p>
+                </div>
+            
+                <div class="exp-res-entry">
+                    <p class="exp-res-title">Custom Computing Systems & Networking</p>
+                    <p class="exp-res-desc">Designed, built, and deployed custom computer systems for diverse corporate and individual clients, including Villeroy & Boch. Managed hardware and networking solutions to meet specific client needs.</p>
+                </div>
+            
+        </div>
+
+    </article>
+    
+
+</section>
+
+
+
+<section id="presentations">
+    <h2>Talks & Presentations</h2>
+
+    
+    <article class="entry">
+
+        <div class="years-float">2024</div>
+        <div class="details-floated">
+            <h3>Talk: CCAT Collaboration Meeting 5</h3>
+            <p>Status Update: primecam readout.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2024</div>
+        <div class="details-floated">
+            <h3>Poster: SPIE Astronomical Telescopes + Instrumentation</h3>
+            <p>CCAT: FYST prime-cam readout software: a framework for massively scalable KID arrays. Proc. SPIE. 13101, Software and Cyberinfrastructure for Astronomy VIII</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2023</div>
+        <div class="details-floated">
+            <h3>Talk: UBC PHAS Invited.</h3>
+            <p>Unveiling the transient evolution of a galaxy through a hyper-luminous quasar, Q2343+125 at $z=2.577$</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2023</div>
+        <div class="details-floated">
+            <h3>Talk: CCAT Collaboration Meeting 4</h3>
+            <p>The development and status of the PrimeCam readout software.</p>
+        </div>
+
+    </article>
+    
+
+</section>
+
+
+
+<section id="teaching">
+    <h2>Teaching Experience</h2>
+
+    
+    <article class="entry">
+
+        <div class="years-float">2025 - 2025</div>
+        <div class="details-floated">
+            <h3>Supervisor</h3>
+            <p>Undergraduate COOP supervisor. Topics: MKID-based narrow-field map maker research and development; MKID array LED mapper circuit board design.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2024 - 2025</div>
+        <div class="details-floated">
+            <h3>Mentor</h3>
+            <p>Secondary school science fair project mentorship. Topic: Neutrino Hunting: Nu Horizons for Cosmology.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2024 - 2024</div>
+        <div class="details-floated">
+            <h3>Supervisor</h3>
+            <p>Undergraduate COOP supervisor. Topic: MKID-based narrow-field map maker research and development.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2022 - 2022</div>
+        <div class="details-floated">
+            <h3>Teaching Assistant</h3>
+            <p>Undergraduate level course teaching assistant, 2 in-person tutorial sections. Course: UBC PHYS 131, Energy and Waves. Responsibilities included leading and teaching weekly tutorials and grading labs and tests.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2021 - 2021</div>
+        <div class="details-floated">
+            <h3>Teaching Assistant</h3>
+            <p>Undergraduate level course teaching assistant, 1 online tutorial section. Course: UBC PHYS 311, Exploring the Universe: Stars and Galaxies. Responsibilities included leading and teaching weekly tutorials and grading labs and tests.</p>
+        </div>
+
+    </article>
+    
+
+</section>
+
+
+
+<section id="awards">
+    <h2>Awards, Recognitions, and Honours</h2>
+
+    
+    <article class="entry">
+
+        <div class="years-float">2019</div>
+        <div class="details-floated">
+            <h3>University of Victoria Faculty of Science Dean's List 2018-2019</h3>
+            <p>This is an honour awarded only to the top 10% of students of each academic year in the Faculty of Science.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2019</div>
+        <div class="details-floated">
+            <h3>Don Ingham Memorial Scholarship</h3>
+            <p>Best Student in the Honours Astronomy program.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        <div class="years-float">2018</div>
+        <div class="details-floated">
+            <h3>Vancouver Island University Dean's Honour List 2017-2018</h3>
+            <p>This is an honour awarded to students who have demonstrated outstanding academic achievement.</p>
+        </div>
+
+    </article>
+    
+
+</section>
+
+
+
+<section id="publications">
+    <h2>Publications</h2>
+
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2025</div>
+        <div class="details-floated">
+            <h3>High-Density Photon-Noise-Limited Multi-Octave Submillimeter Kinetic Inductance Detectors for the Prime-Cam 850 GHz Module</h3>
+            <p class="pub-journal">IEEE Transactions on Applied Superconductivity, vol. 35, issue 5, id. 3518461</p>
+            <p>Huber, Anthony I.; Austermann, Jason; Beall, James A.; Burgoyne, James; Chapman, Scott; Henke, Douglas; Hubmayr, Johannes; Van Lanen, Jeffrey; Sinclair, Adrian; Vaskuri, Anna K.; Vissers, Michael R.; Wheeler, Jordan</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2025</div>
+        <div class="details-floated">
+            <h3>CCAT: LED Mapping and Characterization of the 280 GHz TiN KID Array</h3>
+            <p class="pub-journal">IEEE Transactions on Applied Superconductivity, vol. 35, issue 5, id. 3517564</p>
+            <p>Middleton, Alicia; Choi, Steve K.; Walker, Samantha; Austermann, Jason; Burgoyne, James R.; Butler, Victoria; Chapman, Scott C.; Crites, Abigail T.; Duell, Cody J.; Freundt, Rodrigo G.; Huber, Anthony I.; Huber, Zachary B.; Hubmayr, Johannes; Keller, Ben; Lin, Lawrence T.; Niemack, Michael D.; Patel, Darshan; Sinclair, Adrian K.; Smith, Ema; Vaskuri, Anna; Vavagiakis, Eve M.; Vissers, Michael; Wang, Yuhan; Wheeler, Jordan</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2024*</div>
+        <div class="details-floated">
+            <h3>CCAT: FYST Prime-Cam Readout Software: A framework for massively scalable KID arrays</h3>
+            <p class="pub-journal">Proceedings of the SPIE, Volume 13101, id. 131013C 17 pp. (2024).</p>
+            <p>Burgoyne, James R., Sinclair, Adrian K., Chapman, Scott C., Choi, Steve K., Duell, Cody J., Huber, Anthony I., Huber, Zachary B., Keller, Ben, Lin, Lawrence, Niemack, Michael D., Scott, Douglas, Vavagiakis, Eve M., Walker, Samantha, Xie, Matt, Collaboration, the CCAT</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2024</div>
+        <div class="details-floated">
+            <h3>CCAT: A status update on the EoR-Spec instrument module for Prime-Cam</h3>
+            <p class="pub-journal">Proceedings of the SPIE, Volume 13102, id. 131020U 10 pp. (2024).</p>
+            <p>Freundt, Rodrigo; Li, Yaqiong; Henke, Doug; Austermann, Jason; Burgoyne, James R.; Chapman, Scott; Choi, Steve K.; Duell, Cody J.; Huber, Zach; Niemack, Michael; Nikola, Thomas; Lin, Lawrence; Riechers, Dominik A.; Stacey, Gordon; Vaskuri, Anna K.; Vavagiakis, Eve M.; Wheeler, Jordan; Zou, Bugao</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2024</div>
+        <div class="details-floated">
+            <h3>CCAT: Nonlinear effects in 280 GHz aluminum kinetic inductance detectors</h3>
+            <p class="pub-journal">Proceedings of the SPIE, Volume 13102, id. 131021O 10 pp. (2024).</p>
+            <p>Duell, Cody J.; Austermann, Jason; Burgoyne, James R.; Chapman, Scott C.; Choi, Steve K.; Crites, Abigail T.; Freundt, Rodrigo G.; Huber, Anthony I.; Huber, Zachary B.; Hubmayr, Johannes; Keller, Ben; Lin, Lawrence T.; Middleton, Alicia M.; Murphy, Colin C.; Niemack, Michael D.; Nikola, Thomas; Patel, Darshan; Sinclair, Adrian K.; Smith, Ema; Stacey, Gordon J.; Vaskuri, Anna; Vavagiakis, Eve M.; Vissers, Michael; Walker, Samantha; Wheeler, Jordan</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2024</div>
+        <div class="details-floated">
+            <h3>CCAT: multirate DSP for sub-mm astronomy: polyphase synthesis filter bank on FPGA for enhanced MKID readout</h3>
+            <p class="pub-journal">Proceedings of the SPIE, Volume 13102, id. 1310213 16 pp. (2024).</p>
+            <p>Xie, Ruixuan (Matt); Sinclair, Adrian K.; Burgoyne, James; Chapman, Scott; Huber, Anthony</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2024</div>
+        <div class="details-floated">
+            <h3>CCAT: design and performance of densely packed, high-frequency, dual-polarization kinetic inductance detectors for the Prime-Cam 850 GHz module</h3>
+            <p class="pub-journal">Proceedings of the SPIE, Volume 13102, id. 1310203 13 pp. (2024).</p>
+            <p>Huber, Anthony I.; Austermann, Jason; Beall, James; Burgoyne, James; Chapman, Scott; Choi, Steve K.; Henke, Doug; Huber, Zachary B.; Hubmayr, Johannes; van Lanen, Jeff; Sinclair, Adrian; Vaskuri, Anna; Vavagiakis, Eve M.; Vissers, Michael; Wheeler, Jordan</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2024</div>
+        <div class="details-floated">
+            <h3>CCAT: Detector Noise Limited Performance of the RFSoC-based Readout Electronics for mm/sub-mm/far-IR KIDs</h3>
+            <p class="pub-journal">Millimeter, Submillimeter, and Far-Infrared Detectors and Instrumentation for Astronomy XII. Vol. 13102. SPIE, 2024.</p>
+            <p>Sinclair, Adrian K., Burgoyne, James, Huber, Anthony I., Murphy, Colin, Choi, Steve K., Duell, Cody J., Huber, Zachary B., Li, Yaqiong, Chapman, Scott C., Niemack, Michael D., Nikola, Thomas, Vavagiakis, Eve M., Walker, Samantha, Wheeler, Jordan D., Austermann, Jason, Lin, Lawrence, Xie, Ruixuan, Zou, Bugao, Mauskopf, Philip D.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2024</div>
+        <div class="details-floated">
+            <h3>CCAT: Comparisons of 280 GHz TiN and Al Kinetic Inductance Detector Arrays</h3>
+            <p class="pub-journal">Millimeter, Submillimeter, and Far-Infrared Detectors and Instrumentation for Astronomy XII. Vol. 13102. SPIE, 2024.</p>
+            <p>Duell, Cody J., Austermann, Jason, Beall, James, Burgoyne, James R., Chapman, Scott C., Choi, Steve K., Freundt, Rodrigo G., Gao, Jiansong, Groppi, Christopher, Huber, Anthony I., Huber, Zachary B., Hubmayr, Johannes, Keller, Ben, Li, Yaqiong, Lin, Lawrence T., Matthewson, Justin, Mauskopf, Philip, Middleton, Alicia, Murphy, Colin C., Niemack, Michael D., Nikola, Thomas, Sinclair, Adrian K., Smith, Ema, van Lanen, Jeff, Vaskuri, Anna, Vavagiakis, Eve M., Vissers, Michael, Walker, Samantha, Wheeler, Jordan, Zou, Bugao</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2024</div>
+        <div class="details-floated">
+            <h3>Extended Lyman-$\alpha$ emission towards the SPT2349-56 protocluster at $z=4.3$</h3>
+            <p class="pub-journal">Astronomy & Astrophysics 683 (2024): A64</p>
+            <p>Apostolovski, Yordanka, Aravena, Manuel, Anguita, Timo, Bethermin, Matthieu, Burgoyne, James, Chapman, Scott, De Breuck, Carlos, Gonzalez, Anthony, Gronke, Max, Guaita, Lucia, Hezaveh, Yashar, Hill, Ryley, Jarugula, Sreevani, Johnston, Evelyn, Malkan, Matt, Narayanan, Desika, Reuter, Cassie, Solimano, Manuel, Spilker, Justin, Sulzenauer, Nikolaus, Vieira, Joaquin, Vizgan, David, Weiß, Axel</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2024</div>
+        <div class="details-floated">
+            <h3>Brightest Cluster Galaxy Formation in the $z=4.3$ Protocluster SPT2349-56: Discovery of a Radio-Loud AGN</h3>
+            <p class="pub-journal">The Astrophysical Journal 961.1 (2024): 120.</p>
+            <p>Chapman, Scott C., Hill, Ryley, Aravena, Manuel, Archipley, Melanie, Babul, Arif, Burgoyne, James, Canning, Rebecca E. A., Deane, Roger P., De Breuck, Carlos, Gonzalez, Anthony H., Hayward, Christopher C., Kim, Seon Woo, Malkan, Matt, Marrone, Dan P., McIntyre, Vincent, Murphy, Eric, Pass, Emily, Perry, Ryan W., Phadke, Kedar A., Rennehan, Douglas, Reuter, Cassie, Rotermund, Kaja M., Scott, Douglas, Seymour, Nick, Solimano, Manuel, Spilker, Justin, Stark, Anthony A., Sulzenauer, Nikolaus, Tothill, Nick, Vieira, Joaquin D., Vizgan, David, Wang, George, Weiss, Axel, Chapman, Scott C., Hill, Ryley, Aravena, Manuel, Archipley, Melanie, Babul, Arif, Burgoyne, James, Canning, Rebecca E. A., Deane, Roger P., De Breuck, Carlos, Gonzalez, Anthony H., Hayward, Christopher C., Kim, Seon Woo, Malkan, Matt, Marrone, Dan P., McIntyre, Vincent, Murphy, Eric, Pass, Emily, Perry, Ryan W., Phadke, Kedar A., Rennehan, Douglas, Reuter, Cassie, Rotermund, Kaja M., Scott, Douglas, Seymour, Nick, Solimano, Manuel, Spilker, Justin, Stark, Anthony A., Sulzenauer, Nikolaus, Tothill, Nick, Vieira, Joaquin D., Vizgan, David, Wang, George, Weiss, Axel</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2023</div>
+        <div class="details-floated">
+            <h3>Spatial variations in aromatic hydrocarbon emission in a dust-rich galaxy</h3>
+            <p class="pub-journal">Nature 618.7966 (2023): 708-711.</p>
+            <p>Spilker, Justin S., Phadke, Kedar A., Aravena, Manuel, Archipley, Melanie, Bayliss, Matthew B., Birkin, Jack E., Bethermin, Matthieu, Burgoyne, James, Cathey, Jared, Chapman, Scott C., Dahle, Hakon, Gonzalez, Anthony H., Gururajan, Gayathri, Hayward, Christopher C., Hezaveh, Yashar D., Hill, Ryley, Hutchison, Taylor A., Kim, Keunho J., Kim, Seonwoo, Law, David, Legin, Ronan, Malkan, Matthew A., Marrone, Daniel P., Murphy, Eric J., Narayanan, Desika, Navarre, Alex, Olivier, Grace M., Rich, Jeffrey A., Rigby, Jane R., Reuter, Cassie, Rhoads, James E., Sharon, Keren, Smith, J. D. T., Solimano, Manuel, Sulzenauer, Nikolaus, Vieira, Joaquin D., Weiss, Axel, Whitaker, Katherine E.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2023</div>
+        <div class="details-floated">
+            <h3>The ISM in the z= 6.9 Interacting Galaxies of SPT0311-58.</h3>
+            <p class="pub-journal">The Astrophysical Journal 949.2 (2023): 87.</p>
+            <p>Litke, Katrina C., Marrone, Daniel P., Aravena, Manuel, Archipley, Melanie, Béthermin, Matthieu, Burgoyne, James, Cathey, Jared, Chapman, Scott C., Gonzalez, Anthony H., Greve, Thomas R., Gururajan, Gayathri, Hayward, Christopher C., Malkan, Matthew A., Phadke, Kedar A., Reuter, Cassie A., Rotermund, Kaja M., Spilker, Justin S., Stark, Antony A., Sulzenauer, Nikolaus, Vieira, Joaquin D., Vizgan, David, Weiß, Axel</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2023</div>
+        <div class="details-floated">
+            <h3>Breaking the 10 mW/pixel Limit for Kinetic Inductance Detector Readout Electronics</h3>
+            <p class="pub-journal">arXiv preprint arXiv:2305.00928 (2023)</p>
+            <p>Sinclair, Adrian K., Burgoyne, James R., Li, Yaqiong, Duell, Cody, Chapman, Scott C., Huber, Anthony I., Xie, Ruixuan, Sinclair, Adrian K., Burgoyne, James R., Li, Yaqiong, Duell, Cody, Chapman, Scott C., Huber, Anthony I., Xie, Ruixuan</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2022</div>
+        <div class="details-floated">
+            <h3>CCAT-prime: RFSoC based readout for frequency multiplexed kinetic inductance detectors.</h3>
+            <p class="pub-journal">Millimeter, Submillimeter, and Far-Infrared Detectors and Instrumentation for Astronomy XI. Vol. 12190. SPIE, 2022.</p>
+            <p>Sinclair, A., Stephenson, R.C., Roberson, C., Weeks, E.L., Burgoyne, J., Huber, A.I., Mauskopf, P.D., Chapman, S.C., Austermann, J., Choi, S.K. and Duell, C.J.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2022</div>
+        <div class="details-floated">
+            <h3>CCAT-prime: the 850 GHz camera for prime-cam on FYST.</h3>
+            <p class="pub-journal">Millimeter, Submillimeter, and Far-Infrared Detectors and Instrumentation for Astronomy XI. Vol. 12190. SPIE, 2022.</p>
+            <p>Chapman, S.C., Huber, A.I., Sinclair, A.K., Wheeler, J.D., Austermann, J.E., Beall, J., Burgoyne, J., Choi, S.K., Crites, A., Duell, C.J. and Devina, J.</p>
+        </div>
+
+    </article>
+    
+    <article class="entry">
+
+        
+
+        <div class="years-float">2022</div>
+        <div class="details-floated">
+            <h3>Chaotic and Clumpy Galaxy Formation in an Extremely Massive Reionization-era Halo.</h3>
+            <p class="pub-journal">The Astrophysical Journal Letters 929.1, 2022: L3.</p>
+            <p>Spilker, J.S., Hayward, C.C., Marrone, D.P., Aravena, M., Béthermin, M., Burgoyne, J., Chapman, S.C., Greve, T.R., Gururajan, G., Hezaveh, Y.D. and Hill, R.</p>
+        </div>
+
+    </article>
+    
+
+</section>
+
+
+
+<footer>
+    <p>Version: 2025-06-02</p>
+</footer>
+
+
+</body>
+</html>

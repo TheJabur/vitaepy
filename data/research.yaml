@@ -1,0 +1,41 @@
+- id: "res_cca"
+  date_start: "2023-05-01"
+  date_end: ""
+  institution: "University of British Columbia"
+  position: "Researcher"
+  responsibilities:
+   - title: "CCAT Readout Development"
+     description: "Led software and system development for the Prime-Cam instrument MKID readouts on the Fred Young Submillimeter Telescope (FYST/CCAT), a 6-meter, facility-class observatory. The role required a holistic approach to system design, integrating Linux-based control systems with parallel Xilinx ZCU111 RFSoC boards managing multiple detector arrays. Development was primarily in Python and included technologies such as Redis for messaging and data storage, all within a complex Dockerized control environment that interfaces with telescope and instrument software."
+   - title: "CCAT Quick-Look Map Maker Development"
+     description: "Conducted performance-optimized development of a quick-look map-making tool for the PrimeCam data pipeline. Work involved detailed analysis of BLAST-TNG MKID data to characterize detector noise and required deep expertise in astronomical map-making methodologies and optimization techniques."
+
+- id: "res_ra"
+  date_start: "2021-09-01"
+  date_end: "2023-05-01"
+  institution: "University of British Columbia"
+  position: "Research Assistant"
+  responsibilities:
+   - title: "CCAT Readout System Development Support"
+     description: "Contributed to the development, testing, and analysis of the CCAT readout system through lab work and software support."
+   - title: "Lyman Break Galaxy (LBG) Survey"
+     description: "Reduced and analyzed Hubble Space Telescope (HST) data to perform a Lyman Break Galaxy density survey around SPT0311-58, contributing to high-redshift galaxy population studies."
+
+- id: "res_tra20"
+  date_start: "2020-05-01"
+  date_end: "2020-09-01"
+  institution: "Herzberg Astronomy and Astrophysics Research Centre"
+  position: "Term Research Assistant"
+  responsibilities:
+   - title: "Submillimeter Galaxy Analysis"
+     description: "Applied a custom-built Python toolkit for spectral data cube reduction and analysis to generate research-driven visualizations. Supported multiple projects using data from observatories including IRAM-NOEMA and ALMA."
+
+- id: "res_tra19"
+  date_start: "2019-05-01"
+  date_end: "2019-09-01"
+  institution: "Herzberg Astronomy and Astrophysics Research Centre"
+  position: "Term Research Assistant"
+  responsibilities:
+   - title: "GIRMOS Testbed Optical Integration"
+     description: "Developed control software interfaces between the testbed optical table controller computer and various optical elements including the wavefront-sensors and deformable mirrors for the GIRMOS instrument being designed for the Gemini Telescopes, and pathfinder for future Thirty Meter Telescope (TMT) multi-object spectroscopic instrumentation."
+   - title: "Quasar Q2343+125 Data Analysis"
+     description: "Performed reduction and analysis of numerous spectral-cubes of quasar Q2343+125 from various observatories including IRAM-NOEMA, SCUBA2, and ALMA. This included the design and writing of a custom python class and associated functions to perform the data cube reduction, line/source searches, spectral extractions and fitting, and figure production."

@@ -1,0 +1,20 @@
+
+- id: "exp_abu"
+  date_start: "2011-02-01"
+  date_end: "2017-09-01"
+  company: "Abur Mobile"
+  title: "Independent Developer"
+  responsibilities:
+    - title: "Mobile Application Development"
+      description: "Developed and deployed iOS applications from conception to release, leveraging Swift and Objective-C for robust software development. Proficient in UI/UX design and implementation with Adobe Photoshop, and skilled in full-stack integration for mobile environments."
+
+- id: "exp_aio"
+  date_start: "2005-09-01"
+  date_end: "2012-09-01"
+  company: "AIO Computers"
+  title: "Co-Founder"
+  responsibilities:
+    - title: "Full-Stack Web Development" 
+      description: "Developed and managed front-end and back-end web platforms and databases. Proficient in HTML, XML, PHP, JavaScript, and SQL."
+    - title: "Custom Computing Systems & Networking"
+      description: "Designed, built, and deployed custom computer systems for diverse corporate and individual clients, including Villeroy & Boch. Managed hardware and networking solutions to meet specific client needs."
